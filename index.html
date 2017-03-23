@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>Calculadora</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <script src="///home/alumna40/Escritorio/calculadora/js/calc.js"></script>
+    <form>
+    <table>
+        <tr>
+            <td colspan="4">
+                <input type="text" id="resultado" name="ingresoNumero"  value="" style='width:260px; height:60px'><input type="hidden" id="memoria" value="0">
+            </td>
+        </tr>
+        <tr>            
+            <td><input type="button" id="uno" class="numero" name="numUno" style='width:60px; height:60px' onclick="numeroS(this.value); return false" value="1" ></td>
+            <td><input type="button" id="dos" class="numero" name="numDos" style='width:60px; height:60px' onclick="numeroS(this.value); return false" value="2" ></td>
+            <td><input type="button" id="tres" class="numero" name="numTres" style='width:60px; height:60px' onclick="numeroS(this.value); return false" value="3" ></td>
+            <td><input type="button" id="suma" class="operador" name="sum" style='width:60px; height:60px' onclick="operaciones('sumar'); return false;" value="+" ></td>
+        </tr>
+        
+        <tr>
+            <td><input type="button" id="cuatro" class="numero" name="numCuatro" style='width:60px; height:60px' onclick="numeroS(this.value); return false" value="4" ></td>
+            <td><input type="button" id="cinco" class="numero" name="numCinco" style='width:60px; height:60px' onclick="numeroS(this.value); return false" value=   "5"></td>
+            <td><input type="button" id="seis" class="numero" name="numSeis" style='width:60px; height:60px' onclick="numeroS(this.value); return false" value="6"></td>
+            <td><input type="button" id="resta" class="operador" name="rest" style='width:60px; height:60px' onclick="operaciones('restar'); return false;" value="-" ></td>
+        </tr>
+        
+        <tr>
+            <td><input type="button" id="siete" class="numero" name="numSiete" style='width:60px; height:60px' onclick="numeroS(this.value); return false" value="7" ></td>
+            <td><input type="button" id="ocho" class="numero" name="numOcho" style='width:60px; height:60px' onclick="numeroS(this.value); return false" value="8" ></td>
+            <td><input type="button" id="nueve" class="numero" name="numNueve" style='width:60px; height:60px' onclick="numeroS(this.value); return false" value="9"></td>
+            <td><input type="button" id="mult" class="operador" name="multi" style='width:60px; height:60px' onclick="operaciones('multiplicar'); return false;" value="*"></td>
+        </tr>
+        
+        <tr>
+            <td><input type="button" id="lunar" class="numero" name="punto" style='width:60px; height:60px' onclick="numeroS(this.value); return false" value="."></td>
+            <td><input type="button" id="cero" class="numero" name="numCero" style='width:60px; height:60px' onclick="numeroS(this.value); return false"value="0"></td>
+            <td><input type="button" id="iqual" class="operador" name="igual" style='width:60px; height:60px' onclick="operaciones('igual'); return false;" value="="></td>
+            <td><input type="button" id="divicion" class="operador" name="div" style='width:60px; height:60px' onclick="operaciones('dividir'); return false;" value="/"></td>
+        </tr>
+    </table>
+    </form>
+    
+</body>
+</html>
